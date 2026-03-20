@@ -105,7 +105,10 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body {
-    background:#ffffff;
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--ff-poppins);
+    line-height: 1.6;
 }
 
 /*-----------------------------------*\
