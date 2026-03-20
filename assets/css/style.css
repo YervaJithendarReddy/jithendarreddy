@@ -1,10 +1,10 @@
 :root {
 
- --primary: #2563eb;
---text-main: #1e293b;
---text-light: #64748b;
---bg-main: #f8fafc;
---card-bg: #ffffff;
+--primary: #3b82f6;   /* nice blue for dark */
+--text-main: #f1f5f9;
+--text-light: #94a3b8;
+--bg-main: #0f172a;   /* main background */
+--card-bg: #1e293b;   /* card background */
   );
 
   /* solid */
