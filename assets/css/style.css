@@ -117,7 +117,7 @@ body {
 
 .sidebar,
 article {
-    background: #ffffff;
+    background: var(--card-bg);
     border: 1px solid var(--jet);
     border-radius: 20px;
     padding: 15px;
@@ -142,8 +142,8 @@ article {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    color: #000000;
-    box-shadow: var(--shadow-1);
+    color: var(--text-light);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
     z-index: 1;
 }
 
@@ -174,8 +174,8 @@ article.active {
 .h3,
 .h4,
 .h5 {
-  color: #000000;
-  text-transform: capitalize;
+  color: var(--text-main);
+  font-weight: var(--fw-500);
 }
 
 .h2 { font-size: var(--fs-1); }
@@ -201,7 +201,7 @@ article.active {
         left: 0;
         width: 30px;
         height: 3px;
-        background: #03045e;
+        background: var(--primary);
         border-radius: 3px;
     }
 
@@ -224,20 +224,24 @@ article.active {
 
 .content-card {
     position: relative;
-    background: #ffffff;
+    background: var(--card-bg);
     padding: 15px;
     padding-top: 45px;
     border-radius: 14px;
-    box-shadow: var(--shadow-2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);;
     cursor: pointer;
     z-index: 1;
+	transition: 0.3s ease;
+}
+.content-card:hover {
+    transform: translateY(-5px);
 }
 
     .content-card::before {
         content: "";
         position: absolute;
         inset: 1px;
-        background: #ffffff;
+        background: var(--card-bg);
         border-radius: inherit;
         z-index: -1;
     }
@@ -286,7 +290,7 @@ main {
 }
 
 .info-content .title {
-    color: #000000;
+   color: var(--text-main);
     background: #ffffff;
     font-size: var(--fs-4);
     font-weight: var(--fw-400);
@@ -357,14 +361,14 @@ main {
 }
 
 .contact-title {
-    color: #0277bd;
+    color: var(--primary);
     font-size: var(--fs-8);
     text-transform: uppercase;
     margin-bottom: 2px;
 }
 
 .contact-info :is(.contact-link, time, address) {
-  color: #000000;
+ color: var(--text-light);
   font-size: var(--fs-7);
 }
 
@@ -380,13 +384,13 @@ main {
 }
 
 .social-item .social-link {
-    color: #000000;
+    color: var(--text-light);
     font-size: 24px;
 }
 
 
     .social-item .social-link:hover {
-        color: #0277bd;
+        color: var(--primary);
     }
 
 /*-----------------------------------*\
@@ -415,7 +419,7 @@ main {
 }
 
 .navbar-link {
-    color: #000000;
+    color: var(--text-light);
     font-size: var(--fs-8);
     padding: 20px 7px;
     transition: color var(--transition-1);
@@ -423,11 +427,11 @@ main {
 
     .navbar-link:hover,
     .navbar-link:focus {
-        color: #000000;
+        color: var(--text-light);
     }
 
     .navbar-link.active {
-        color: #0277bd;
+        color: var(--primary);
     }
 
 /*-----------------------------------*\
@@ -437,7 +441,7 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-    color: #000000;
+    color: var(--text-light);
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
     line-height: 1.6;
@@ -730,7 +734,7 @@ main {
 }
 
 .timeline-list span {
-    color: #0277bd;
+    color: var(--primary);
     font-weight: var(--fw-400);
     line-height: 1.6;
 }
@@ -796,7 +800,7 @@ main {
 }
 
 .skill-progress-fill {
-    background: #03045e;
+    background: var(--primary);
     height: 100%;
     border-radius: inherit;
 }
@@ -863,7 +867,7 @@ main {
 
 .select-item button {
   background: #000000;
-  color: #000000;
+  color: var(--text-light);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   text-transform: capitalize;
@@ -922,7 +926,7 @@ main {
   --scale: 0.8;
 
   background: #000000;
-  color: #000000;
+  color: var(--text-light);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -955,7 +959,7 @@ main {
 .project-category { margin-left: 10px; }
 
 .project-title {
-    color: #03045e;
+    color: var(--primary);
     font-size: var(--fs-5);
     font-weight: var(--fw-400);
     text-transform: capitalize;
